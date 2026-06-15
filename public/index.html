@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Submit Tugas Praktikum</title></head>
+<body>
+    <h2>Form Pengumpulan Tugas</h2>
+    <form action="/submit-task" method="POST" enctype="multipart/form-data">
+        <input type="text" name="nim" placeholder="NIM" required><br><br>
+        <input type="text" name="name" placeholder="Nama" required><br><br>
+        <input type="text" name="class_name" placeholder="Kelas" required><br><br>
+        <select name="course">
+            <option value="Cloud Computing">Cloud Computing</option>
+            <option value="Web Development">Web Development</option>
+        </select><br><br>
+        <input type="file" name="file_tugas" required><br><br>
+        <button type="submit">Kirim Tugas</button>
+    </form>
+</body>
+</html>
